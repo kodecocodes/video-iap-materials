@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0159CE87E17E1DD3F52FA2E7F57B573B /* Data+IAPReceiptVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817AD17CA9D5DFAF03AE7CECC6387AE3 /* Data+IAPReceiptVerifier.swift */; };
+		121917F575D8CAE33C57C431E191AB77 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B781C19E316A076A311C8E198398FD5 /* StoreKit.framework */; };
+		12C4D83BFBB79A461D88A7753418D6D0 /* RSAKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C1F02E2CC14658229D00A7790C93E5 /* RSAKey.swift */; };
+		1730DCD34B040CE0DA4C02AA36816C67 /* Pods-ReceiptVerifier-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EC8FF6E4C9853F28307844636D24A9C /* Pods-ReceiptVerifier-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36190E933A15CEA59E76D4488427EBE3 /* IAPReceiptVerifier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E23E3E005CE9A9E52D5218CB16EA8E /* IAPReceiptVerifier-dummy.m */; };
+		69465AFBE345603FE7981FD6735FEDF5 /* Pods-ReceiptVerifier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7741F437490B804FF8CA545B46CD5EB1 /* Pods-ReceiptVerifier-dummy.m */; };
+		96EE1985E9CA92311A78852EFD5289D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945602AC93E87CE4665457CA59436C26 /* Foundation.framework */; };
+		C3E298B7639F567A018AD9CD891AC7CD /* IAPReceiptVerifier-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1100EA21A760137B8E815E95B1EE289 /* IAPReceiptVerifier-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D87F05928DA70CAF4DAF18901E164A47 /* IAPReceiptVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EF252E438BB6C17FBBAF742C305908 /* IAPReceiptVerifier.swift */; };
+		ECB1FF085DEAED9151C62BBC19BB3EB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945602AC93E87CE4665457CA59436C26 /* Foundation.framework */; };
+		FD989978CD79CD7985CA8402255B28ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0AEDAA2988AD7710C5CF281E601048 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75D0E2DD2C06FB0D8A040AFE8F31ACE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CD092BB0F29C338A5F09D6432071AC3;
+			remoteInfo = IAPReceiptVerifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BFE95729FAB8F6C2279646464C47200 /* Pods-ReceiptVerifier-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReceiptVerifier-acknowledgements.markdown"; sourceTree = "<group>"; };
+		146A6A93BDE4C49D0ADE54787090D133 /* Pods-ReceiptVerifier-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReceiptVerifier-resources.sh"; sourceTree = "<group>"; };
+		21C1F02E2CC14658229D00A7790C93E5 /* RSAKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSAKey.swift; path = IAPReceiptVerifier/Classes/RSAKey.swift; sourceTree = "<group>"; };
+		2EC8FF6E4C9853F28307844636D24A9C /* Pods-ReceiptVerifier-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReceiptVerifier-umbrella.h"; sourceTree = "<group>"; };
+		304A29B584C8AE283E54EA1298F541D3 /* Pods-ReceiptVerifier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ReceiptVerifier.modulemap"; sourceTree = "<group>"; };
+		49FCC268DE532BA188DA33683FCEC8B6 /* Pods-ReceiptVerifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReceiptVerifier.debug.xcconfig"; sourceTree = "<group>"; };
+		4BB0C3FA05A42CC503C4643BF689589B /* IAPReceiptVerifier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IAPReceiptVerifier.modulemap; sourceTree = "<group>"; };
+		5B781C19E316A076A311C8E198398FD5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		62EF252E438BB6C17FBBAF742C305908 /* IAPReceiptVerifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IAPReceiptVerifier.swift; path = IAPReceiptVerifier/Classes/IAPReceiptVerifier.swift; sourceTree = "<group>"; };
+		6D0D16C6D7084E96ABDE2EB72A9BE4CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7741F437490B804FF8CA545B46CD5EB1 /* Pods-ReceiptVerifier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReceiptVerifier-dummy.m"; sourceTree = "<group>"; };
+		817AD17CA9D5DFAF03AE7CECC6387AE3 /* Data+IAPReceiptVerifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+IAPReceiptVerifier.swift"; path = "IAPReceiptVerifier/Classes/Data+IAPReceiptVerifier.swift"; sourceTree = "<group>"; };
+		83F31E60C971F70CCC15BC75233EB53B /* IAPReceiptVerifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IAPReceiptVerifier.framework; path = IAPReceiptVerifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		945602AC93E87CE4665457CA59436C26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9D631691D5DF8ECF715E4618E0503776 /* Pods-ReceiptVerifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReceiptVerifier.release.xcconfig"; sourceTree = "<group>"; };
+		9DB07E95C67F9BF40189358CEF401EFC /* Pods-ReceiptVerifier-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReceiptVerifier-acknowledgements.plist"; sourceTree = "<group>"; };
+		9F0AEDAA2988AD7710C5CF281E601048 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A1100EA21A760137B8E815E95B1EE289 /* IAPReceiptVerifier-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IAPReceiptVerifier-umbrella.h"; sourceTree = "<group>"; };
+		A6E9E68F36D9CF6FF57B944CA0C23DB5 /* IAPReceiptVerifier-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IAPReceiptVerifier-prefix.pch"; sourceTree = "<group>"; };
+		AD07A63A5ACDDAF3011EA4E441AA1431 /* Pods-ReceiptVerifier-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReceiptVerifier-frameworks.sh"; sourceTree = "<group>"; };
+		C5E5C34AB7FDA52A4D6161BC06B64A21 /* Pods_ReceiptVerifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReceiptVerifier.framework; path = "Pods-ReceiptVerifier.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11D195474D87260319674C918F53BDE /* IAPReceiptVerifier.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IAPReceiptVerifier.xcconfig; sourceTree = "<group>"; };
+		DFCCF9297714055835441439FF9CEE9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E23E3E005CE9A9E52D5218CB16EA8E /* IAPReceiptVerifier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IAPReceiptVerifier-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A808F1F11EB26E79B9DDA446E028D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB1FF085DEAED9151C62BBC19BB3EB4 /* Foundation.framework in Frameworks */,
+				121917F575D8CAE33C57C431E191AB77 /* StoreKit.framework in Frameworks */,
+				FD989978CD79CD7985CA8402255B28ED /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6F8A587A56959FC17A3EA9255966DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EE1985E9CA92311A78852EFD5289D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7CFD5F26DCD4D05DC009A06376F1F02 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B5BB4ACF812BB3475A9E339EC6BECB7 /* Pods-ReceiptVerifier */ = {
+			isa = PBXGroup;
+			children = (
+				6D0D16C6D7084E96ABDE2EB72A9BE4CB /* Info.plist */,
+				304A29B584C8AE283E54EA1298F541D3 /* Pods-ReceiptVerifier.modulemap */,
+				0BFE95729FAB8F6C2279646464C47200 /* Pods-ReceiptVerifier-acknowledgements.markdown */,
+				9DB07E95C67F9BF40189358CEF401EFC /* Pods-ReceiptVerifier-acknowledgements.plist */,
+				7741F437490B804FF8CA545B46CD5EB1 /* Pods-ReceiptVerifier-dummy.m */,
+				AD07A63A5ACDDAF3011EA4E441AA1431 /* Pods-ReceiptVerifier-frameworks.sh */,
+				146A6A93BDE4C49D0ADE54787090D133 /* Pods-ReceiptVerifier-resources.sh */,
+				2EC8FF6E4C9853F28307844636D24A9C /* Pods-ReceiptVerifier-umbrella.h */,
+				49FCC268DE532BA188DA33683FCEC8B6 /* Pods-ReceiptVerifier.debug.xcconfig */,
+				9D631691D5DF8ECF715E4618E0503776 /* Pods-ReceiptVerifier.release.xcconfig */,
+			);
+			name = "Pods-ReceiptVerifier";
+			path = "Target Support Files/Pods-ReceiptVerifier";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				9A01A92027CCCB43E303F538191B1895 /* Pods */,
+				D56AA269E9E55A49A217F9D0C139B3B4 /* Products */,
+				B9079A9216CBB6A19FF27A17379F26EF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9A01A92027CCCB43E303F538191B1895 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9DA513EBBE5058468B6B7A206FC2244 /* IAPReceiptVerifier */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A821E1C25440E9EEEA2416F711D166CF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BB0C3FA05A42CC503C4643BF689589B /* IAPReceiptVerifier.modulemap */,
+				D11D195474D87260319674C918F53BDE /* IAPReceiptVerifier.xcconfig */,
+				E0E23E3E005CE9A9E52D5218CB16EA8E /* IAPReceiptVerifier-dummy.m */,
+				A6E9E68F36D9CF6FF57B944CA0C23DB5 /* IAPReceiptVerifier-prefix.pch */,
+				A1100EA21A760137B8E815E95B1EE289 /* IAPReceiptVerifier-umbrella.h */,
+				DFCCF9297714055835441439FF9CEE9E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IAPReceiptVerifier";
+			sourceTree = "<group>";
+		};
+		B9079A9216CBB6A19FF27A17379F26EF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B5BB4ACF812BB3475A9E339EC6BECB7 /* Pods-ReceiptVerifier */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C9DA513EBBE5058468B6B7A206FC2244 /* IAPReceiptVerifier */ = {
+			isa = PBXGroup;
+			children = (
+				817AD17CA9D5DFAF03AE7CECC6387AE3 /* Data+IAPReceiptVerifier.swift */,
+				62EF252E438BB6C17FBBAF742C305908 /* IAPReceiptVerifier.swift */,
+				21C1F02E2CC14658229D00A7790C93E5 /* RSAKey.swift */,
+				A821E1C25440E9EEEA2416F711D166CF /* Support Files */,
+			);
+			name = IAPReceiptVerifier;
+			path = IAPReceiptVerifier;
+			sourceTree = "<group>";
+		};
+		D56AA269E9E55A49A217F9D0C139B3B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83F31E60C971F70CCC15BC75233EB53B /* IAPReceiptVerifier.framework */,
+				C5E5C34AB7FDA52A4D6161BC06B64A21 /* Pods_ReceiptVerifier.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7CFD5F26DCD4D05DC009A06376F1F02 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				945602AC93E87CE4665457CA59436C26 /* Foundation.framework */,
+				5B781C19E316A076A311C8E198398FD5 /* StoreKit.framework */,
+				9F0AEDAA2988AD7710C5CF281E601048 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B568E9B56D455F5491558DC32F26785 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1730DCD34B040CE0DA4C02AA36816C67 /* Pods-ReceiptVerifier-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D578E8FB99E6A7BAF02CA41232F448 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E298B7639F567A018AD9CD891AC7CD /* IAPReceiptVerifier-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3259D53090C23DD793C6B490AF768C74 /* Pods-ReceiptVerifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1806DAF98FA0F37DF84B30908AEA82D /* Build configuration list for PBXNativeTarget "Pods-ReceiptVerifier" */;
+			buildPhases = (
+				0B568E9B56D455F5491558DC32F26785 /* Headers */,
+				E3922F2CCD60F74F34D549FE3C74C87C /* Sources */,
+				B6F8A587A56959FC17A3EA9255966DD6 /* Frameworks */,
+				B929CAB94BD54B6AF79EA8EE47D4CA80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92049F8E5B8F49D71917485D6E96932A /* PBXTargetDependency */,
+			);
+			name = "Pods-ReceiptVerifier";
+			productName = "Pods-ReceiptVerifier";
+			productReference = C5E5C34AB7FDA52A4D6161BC06B64A21 /* Pods_ReceiptVerifier.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3CD092BB0F29C338A5F09D6432071AC3 /* IAPReceiptVerifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6620033A956ACE0498B5EBCF8403ED0 /* Build configuration list for PBXNativeTarget "IAPReceiptVerifier" */;
+			buildPhases = (
+				B1D578E8FB99E6A7BAF02CA41232F448 /* Headers */,
+				1F4EEA539FD5CEB2D3D977AAC6B58529 /* Sources */,
+				9A808F1F11EB26E79B9DDA446E028D29 /* Frameworks */,
+				975BFCAE4152E5BC0D2E0001C2DF3477 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IAPReceiptVerifier;
+			productName = IAPReceiptVerifier;
+			productReference = 83F31E60C971F70CCC15BC75233EB53B /* IAPReceiptVerifier.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D56AA269E9E55A49A217F9D0C139B3B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CD092BB0F29C338A5F09D6432071AC3 /* IAPReceiptVerifier */,
+				3259D53090C23DD793C6B490AF768C74 /* Pods-ReceiptVerifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		975BFCAE4152E5BC0D2E0001C2DF3477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B929CAB94BD54B6AF79EA8EE47D4CA80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F4EEA539FD5CEB2D3D977AAC6B58529 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0159CE87E17E1DD3F52FA2E7F57B573B /* Data+IAPReceiptVerifier.swift in Sources */,
+				36190E933A15CEA59E76D4488427EBE3 /* IAPReceiptVerifier-dummy.m in Sources */,
+				D87F05928DA70CAF4DAF18901E164A47 /* IAPReceiptVerifier.swift in Sources */,
+				12C4D83BFBB79A461D88A7753418D6D0 /* RSAKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3922F2CCD60F74F34D549FE3C74C87C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69465AFBE345603FE7981FD6735FEDF5 /* Pods-ReceiptVerifier-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92049F8E5B8F49D71917485D6E96932A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IAPReceiptVerifier;
+			target = 3CD092BB0F29C338A5F09D6432071AC3 /* IAPReceiptVerifier */;
+			targetProxy = 75D0E2DD2C06FB0D8A040AFE8F31ACE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		40B45BB3CF3EE4476259302A7FAAD78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		47C7B5916B5BB22FA1E49B79EFCCB6E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11D195474D87260319674C918F53BDE /* IAPReceiptVerifier.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IAPReceiptVerifier/IAPReceiptVerifier-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IAPReceiptVerifier/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IAPReceiptVerifier/IAPReceiptVerifier.modulemap";
+				PRODUCT_MODULE_NAME = IAPReceiptVerifier;
+				PRODUCT_NAME = IAPReceiptVerifier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		85ED3013A635C27F8B7FAF51362B108C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A1ACEB5FF25822A04BDF34168EC78001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49FCC268DE532BA188DA33683FCEC8B6 /* Pods-ReceiptVerifier.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ReceiptVerifier/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ReceiptVerifier/Pods-ReceiptVerifier.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA6E05DA3AC49DA6D21CC61F6A6F65FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D631691D5DF8ECF715E4618E0503776 /* Pods-ReceiptVerifier.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ReceiptVerifier/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ReceiptVerifier/Pods-ReceiptVerifier.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E5D1C195D754341BFDC2E04F27304BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11D195474D87260319674C918F53BDE /* IAPReceiptVerifier.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IAPReceiptVerifier/IAPReceiptVerifier-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IAPReceiptVerifier/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IAPReceiptVerifier/IAPReceiptVerifier.modulemap";
+				PRODUCT_MODULE_NAME = IAPReceiptVerifier;
+				PRODUCT_NAME = IAPReceiptVerifier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85ED3013A635C27F8B7FAF51362B108C /* Debug */,
+				40B45BB3CF3EE4476259302A7FAAD78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1806DAF98FA0F37DF84B30908AEA82D /* Build configuration list for PBXNativeTarget "Pods-ReceiptVerifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1ACEB5FF25822A04BDF34168EC78001 /* Debug */,
+				DA6E05DA3AC49DA6D21CC61F6A6F65FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6620033A956ACE0498B5EBCF8403ED0 /* Build configuration list for PBXNativeTarget "IAPReceiptVerifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D1C195D754341BFDC2E04F27304BAB /* Debug */,
+				47C7B5916B5BB22FA1E49B79EFCCB6E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

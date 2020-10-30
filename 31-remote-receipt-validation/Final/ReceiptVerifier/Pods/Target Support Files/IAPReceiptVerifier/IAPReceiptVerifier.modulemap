@@ -1,0 +1,6 @@
+framework module IAPReceiptVerifier {
+  umbrella header "IAPReceiptVerifier-umbrella.h"
+
+  export *
+  module * { export * }
+}

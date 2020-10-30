@@ -1,0 +1,16 @@
+PODS:
+  - IAPReceiptVerifier (0.1.3)
+
+DEPENDENCIES:
+  - IAPReceiptVerifier
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IAPReceiptVerifier
+
+SPEC CHECKSUMS:
+  IAPReceiptVerifier: 4d65b21b90165d981eef9c77bde2d6f4a46fb1da
+
+PODFILE CHECKSUM: ffc676c4cdb903bf741c7fd4936d8c53a4190364
+
+COCOAPODS: 1.5.3
