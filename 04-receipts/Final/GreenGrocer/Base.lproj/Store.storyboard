@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EVi-dB-1h4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Store-->
+        <scene sceneID="5ax-Fi-mfh">
+            <objects>
+                <navigationController id="EVi-dB-1h4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Store" image="store-green" selectedImage="store-white" id="b5H-P0-seL"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PIU-wZ-BlU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OlM-sm-PsC" kind="relationship" relationship="rootViewController" id="ABh-S8-vDd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9J8-Kx-KFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="1141"/>
+        </scene>
+        <!--Store-->
+        <scene sceneID="nwN-Jn-LFm">
+            <objects>
+                <viewController id="OlM-sm-PsC" customClass="StoreViewController" customModule="GreenGrocer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6fu-aK-RuF"/>
+                        <viewControllerLayoutGuide type="bottom" id="DVp-jR-5dT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e5a-iL-iyg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fruit" translatesAutoresizingMaskIntoConstraints="NO" id="5xs-mD-UMa">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBy-PC-zMb">
+                                <rect key="frame" x="20" y="84" width="560" height="447"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="d1b-fK-09k">
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="447"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="bSq-vR-4hm">
+                                            <rect key="frame" x="8" y="8" width="544" height="429"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ray's Fruit Emporium" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zpY-cK-NK6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="544" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="36"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="☏ (202) 555 0198 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfK-xd-iHO">
+                                                    <rect key="frame" x="0.0" y="54" width="544" height="33"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIU-Bn-ZAY">
+                                                    <rect key="frame" x="0.0" y="98" width="544" height="55"/>
+                                                    <string key="text">2627 Mulberry Street 
+Lexington, NC 27292</string>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" misplaced="YES" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHu-18-2KJ">
+                                                    <rect key="frame" x="0.0" y="164" width="544" height="266"/>
+                                                </mapView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bSq-vR-4hm" firstAttribute="top" secondItem="d1b-fK-09k" secondAttribute="topMargin" id="BaM-Gc-ySz"/>
+                                        <constraint firstAttribute="bottom" secondItem="bSq-vR-4hm" secondAttribute="bottom" constant="10" id="Jdg-Bf-dW5"/>
+                                        <constraint firstItem="bSq-vR-4hm" firstAttribute="leading" secondItem="d1b-fK-09k" secondAttribute="leadingMargin" id="joD-91-CHV"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="bSq-vR-4hm" secondAttribute="trailing" id="niQ-RI-tM8"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5xs-mD-UMa" secondAttribute="trailing" id="45P-Ax-Hra"/>
+                            <constraint firstAttribute="bottom" secondItem="5xs-mD-UMa" secondAttribute="bottom" id="CUE-mE-it5"/>
+                            <constraint firstItem="uBy-PC-zMb" firstAttribute="top" secondItem="6fu-aK-RuF" secondAttribute="bottom" constant="20" id="Ggf-M7-JnX"/>
+                            <constraint firstItem="DVp-jR-5dT" firstAttribute="top" secondItem="uBy-PC-zMb" secondAttribute="bottom" constant="20" id="NHK-yp-EW8"/>
+                            <constraint firstItem="uBy-PC-zMb" firstAttribute="leading" secondItem="e5a-iL-iyg" secondAttribute="leadingMargin" id="UVd-Jr-an9"/>
+                            <constraint firstItem="5xs-mD-UMa" firstAttribute="top" secondItem="e5a-iL-iyg" secondAttribute="top" id="ciA-ID-9Au"/>
+                            <constraint firstItem="5xs-mD-UMa" firstAttribute="leading" secondItem="e5a-iL-iyg" secondAttribute="leading" id="ko1-cJ-Xb9"/>
+                            <constraint firstItem="uBy-PC-zMb" firstAttribute="trailing" secondItem="e5a-iL-iyg" secondAttribute="trailingMargin" id="w3O-yy-f00"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Store" id="bfZ-zz-glu"/>
+                    <connections>
+                        <outlet property="mapView" destination="iHu-18-2KJ" id="TZ5-MJ-L2n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P3a-oN-XFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355" y="1141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fruit" width="1520" height="836"/>
+        <image name="store-green" width="32" height="32"/>
+        <image name="store-white" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T9l-g4-1TW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ad Container View Controller-->
+        <scene sceneID="L2O-k7-nLS">
+            <objects>
+                <viewController id="T9l-g4-1TW" customClass="AdContainerViewController" customModule="GreenGrocer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EXo-g1-MRx"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZVr-Nu-WR5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ekQ-Ya-0nr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0lo-hL-CN8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-gw-sFu">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                                        <connections>
+                                            <segue destination="49e-Tb-3d3" kind="embed" id="69x-pb-wgv"/>
+                                        </connections>
+                                    </containerView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sva-eQ-e7j" userLabel="Ad View">
+                                        <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📢 an intrusive advert" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW6-d8-iIi">
+                                                <rect key="frame" x="8" y="6.5" width="584" height="37.5"/>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUM-1m-65M">
+                                                <rect key="frame" x="526" y="23" width="70" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Remove Ads"/>
+                                                <connections>
+                                                    <action selector="handleRemoveAdsPressed:" destination="T9l-g4-1TW" eventType="touchUpInside" id="S7F-yI-UnE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.79607843140000001" green="0.74509803919999995" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="fW6-d8-iIi" firstAttribute="leading" secondItem="sva-eQ-e7j" secondAttribute="leadingMargin" id="Os9-Fd-dAV"/>
+                                            <constraint firstItem="JUM-1m-65M" firstAttribute="trailing" secondItem="sva-eQ-e7j" secondAttribute="trailing" constant="-4" id="VCD-qL-jNJ"/>
+                                            <constraint firstItem="fW6-d8-iIi" firstAttribute="centerY" secondItem="sva-eQ-e7j" secondAttribute="centerY" id="aPI-Vc-9iW"/>
+                                            <constraint firstItem="fW6-d8-iIi" firstAttribute="trailing" secondItem="sva-eQ-e7j" secondAttribute="trailingMargin" id="aog-PP-mqR"/>
+                                            <constraint firstAttribute="height" constant="50" id="cyp-wi-gFD"/>
+                                            <constraint firstItem="JUM-1m-65M" firstAttribute="bottom" secondItem="sva-eQ-e7j" secondAttribute="bottom" id="dre-MZ-FD8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0lo-hL-CN8" firstAttribute="top" secondItem="ekQ-Ya-0nr" secondAttribute="top" id="3ci-73-64f"/>
+                            <constraint firstItem="0lo-hL-CN8" firstAttribute="leading" secondItem="ekQ-Ya-0nr" secondAttribute="leading" id="G0n-ay-KTj"/>
+                            <constraint firstItem="ZVr-Nu-WR5" firstAttribute="top" secondItem="0lo-hL-CN8" secondAttribute="bottom" id="NrV-2a-OBQ"/>
+                            <constraint firstAttribute="trailing" secondItem="0lo-hL-CN8" secondAttribute="trailing" id="XUu-5C-v4H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adView" destination="sva-eQ-e7j" id="hx3-kJ-Vbk"/>
+                        <outlet property="containerView" destination="6cp-gw-sFu" id="gYg-tX-FmX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ANn-oL-9ey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-800" y="-63"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" customClass="TabBarViewController" customModule="GreenGrocer" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="A0P-kI-5Gm" kind="relationship" relationship="viewControllers" id="59O-w5-kzS"/>
+                        <segue destination="u0a-h8-f7Q" kind="relationship" relationship="viewControllers" id="Knm-3C-keT"/>
+                        <segue destination="YeB-Jv-HXr" kind="relationship" relationship="viewControllers" id="04g-ld-5Yr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="-63"/>
+        </scene>
+        <!--Products-->
+        <scene sceneID="j63-MU-LSB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Products" id="A0P-kI-5Gm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="sPN-OE-znr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecs-Ar-gXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392.5" y="-296"/>
+        </scene>
+        <!--ShoppingLists-->
+        <scene sceneID="SOl-FJ-tXC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ShoppingLists" id="u0a-h8-f7Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="xvQ-TT-3bx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggK-9b-e9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408" y="-63"/>
+        </scene>
+        <!--Store-->
+        <scene sceneID="YcT-9z-lA5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Store" id="YeB-Jv-HXr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ASC-Er-aT6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HAH-9a-YCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="177"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>products</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>477F70B5-BD2D-48BC-B76A-3A7668B3E612</string>
+			<key>name</key>
+			<string>Apple</string>
+			<key>price</key>
+			<integer>3</integer>
+			<key>details</key>
+			<string>An apple a day keeps the doctor away.</string>
+			<key>photoName</key>
+			<string>apples</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>6545E878-C911-4829-B703-88D52DDB7E0B</string>
+			<key>name</key>
+			<string>Pear</string>
+			<key>price</key>
+			<integer>4</integer>
+			<key>details</key>
+			<string>Juicy and firm - just as you like it</string>
+			<key>photoName</key>
+			<string>pears</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>92E46D3E-BFC8-4277-8910-07D1C0945172</string>
+			<key>name</key>
+			<string>Banana</string>
+			<key>price</key>
+			<integer>5</integer>
+			<key>details</key>
+			<string>What an excellent source of potassium!</string>
+			<key>photoName</key>
+			<string>bananas</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>26BD8DD1-2377-4D11-BE0E-B16DD8B0BC1C</string>
+			<key>name</key>
+			<string>Cherries</string>
+			<key>price</key>
+			<integer>10</integer>
+			<key>details</key>
+			<string>Enjoy life that little bit more - with a cherry on top!</string>
+			<key>photoName</key>
+			<string>cherries</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>39B49B8B-D60C-4BC3-A6C7-BD7FBB67C963</string>
+			<key>name</key>
+			<string>Grapes</string>
+			<key>price</key>
+			<integer>6</integer>
+			<key>details</key>
+			<string>Fancy making wine? Or sultanas? You need to get yourself some grapes</string>
+			<key>photoName</key>
+			<string>grapes</string>
+		</dict>
+	</array>
+	<key>shoppingLists</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>2C9F5AB8-B563-4733-AA4B-7936060BAE47</string>
+			<key>name</key>
+			<string>Weekly Shop</string>
+			<key>date</key>
+			<date>2015-07-23T16:58:12Z</date>
+			<key>products</key>
+			<array>
+				<string>92E46D3E-BFC8-4277-8910-07D1C0945172</string>
+				<string>39B49B8B-D60C-4BC3-A6C7-BD7FBB67C963</string>
+				<string>477F70B5-BD2D-48BC-B76A-3A7668B3E612</string>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>223E7E35-8083-475B-8669-0FA39C41628F</string>
+			<key>name</key>
+			<string>5-A-Day</string>
+			<key>date</key>
+			<date>2015-07-13T16:58:12Z</date>
+			<key>products</key>
+			<array>
+				<string>39B49B8B-D60C-4BC3-A6C7-BD7FBB67C963</string>
+				<string>26BD8DD1-2377-4D11-BE0E-B16DD8B0BC1C</string>
+				<string>92E46D3E-BFC8-4277-8910-07D1C0945172</string>
+				<string>6545E878-C911-4829-B703-88D52DDB7E0B</string>
+				<string>477F70B5-BD2D-48BC-B76A-3A7668B3E612</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
