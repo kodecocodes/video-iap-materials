@@ -1,4 +1,4 @@
-# Course name: Materials
+# In-App Purchases: Materials
 
 This repo contains all the downloadable materials and projects associated with the **[In-App Purchases](https://www.raywenderlich.com/1304447-in-app-purchases)** from [raywenderlich.com](https://www.raywenderlich.com).
 
