@@ -30,27 +30,70 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import Foundation
+import StoreKit
 
-class Owl: Hashable, Equatable {
+struct Owl {
+  init(product: Product) async {
+    self.product = product
 
-  var name = ""
-  var cost: Decimal = 0
-  var owned = false
-
-  init(name: String, cost: Decimal) {
-    self.name = name
-    self.cost = cost
+    if case .verified = await Transaction.latest(for: product.id) {
+      isPurchased = true
+    } else {
+      isPurchased = false
+    }
   }
 
-  func hash(into hasher: inout Hasher) {
-    hasher.combine(name)
-    hasher.combine(cost)
-  }
+  let product: Product
+  var isPurchased: Bool
+}
 
-  static func == (lhs: Owl, rhs: Owl) -> Bool {
-    return lhs.name == rhs.name && lhs.cost == rhs.cost
+extension Array where Element == Owl {
+  init() async throws {
+    let ids = [
+      "CarefreeOwl",
+      "CouchOwl",
+      "CryingOwl",
+      "GoodJobOwl",
+      "GoodNightOwl",
+      "InLoveOwl",
+      "LonelyOwl",
+      "NightOwl",
+      "ShyOwl"
+    ].map { .prefix + $0 }
+
+    self = try await Product.products(for: ids)
+      .map { await .init(product: $0) }
   }
 }
 
+extension StoreKit.Product.ID {
+  static var prefix: Self { "com.razeware.course.iap.2022." }
+}
 
+// MARK: - Identifiable
+extension Owl: Identifiable {
+  var id: String { product.id }
+}
+
+private extension Sequence where Element: Sendable {
+  func map<Transformed: Sendable>(
+    priority: TaskPriority? = nil,
+    _ transform: @escaping @Sendable (Element) async throws -> Transformed
+  ) async rethrows -> [Transformed] {
+    try await withThrowingTaskGroup(
+      of: EnumeratedSequence<[Transformed]>.Element.self
+    ) { group in
+      for (offset, element) in enumerated() {
+        group.addTask(priority: priority) {
+          (offset, try await transform(element))
+        }
+      }
+
+      return try await group.reduce(
+        into: map { _ in nil } as [Transformed?]
+      ) {
+        $0[$1.offset] = $1.element
+      } as! [Transformed]
+    }
+  }
+}

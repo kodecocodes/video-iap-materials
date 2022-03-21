@@ -7,31 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D3298EB5257856DE005874E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3298EB4257856DE005874E5 /* AppDelegate.swift */; };
-		D34650F0253786E500F701EA /* InsomniOwlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34650EF253786E500F701EA /* InsomniOwlApp.swift */; };
+		49EAE37A27E8996B00C761B4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EAE37927E8996B00C761B4 /* StoreKit.framework */; };
+		49EAE37C27E89D5C00C761B4 /* IAPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EAE37B27E89D5C00C761B4 /* IAPStore.swift */; };
+		D34650F0253786E500F701EA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34650EF253786E500F701EA /* App.swift */; };
 		D34650F2253786E500F701EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34650F1253786E500F701EA /* ContentView.swift */; };
 		D34650F4253786E700F701EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34650F3253786E700F701EA /* Assets.xcassets */; };
 		D34650F7253786E700F701EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34650F6253786E700F701EA /* Preview Assets.xcassets */; };
 		D34651012537878A00F701EA /* Owl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34651002537878A00F701EA /* Owl.swift */; };
 		D34651082538C91500F701EA /* OwlDLCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34651072538C91500F701EA /* OwlDLCView.swift */; };
-		D3FA6BAC2577FB3600E2047D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FA6BAB2577FB3600E2047D /* StoreKit.framework */; };
-		D3FA6BB5257832F000E2047D /* IAPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA6BB4257832F000E2047D /* IAPStore.swift */; };
-		D3FA6BB82578330C00E2047D /* OwlProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA6BB72578330C00E2047D /* OwlProducts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D3298EB4257856DE005874E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49EAE37927E8996B00C761B4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		49EAE37B27E89D5C00C761B4 /* IAPStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPStore.swift; sourceTree = "<group>"; };
 		D34650EC253786E500F701EA /* InsomniOwl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsomniOwl.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D34650EF253786E500F701EA /* InsomniOwlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsomniOwlApp.swift; sourceTree = "<group>"; };
+		D34650EF253786E500F701EA /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		D34650F1253786E500F701EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D34650F3253786E700F701EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D34650F6253786E700F701EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D34650F8253786E700F701EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D34651002537878A00F701EA /* Owl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owl.swift; sourceTree = "<group>"; };
 		D34651072538C91500F701EA /* OwlDLCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlDLCView.swift; sourceTree = "<group>"; };
-		D3FA6BAB2577FB3600E2047D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		D3FA6BB4257832F000E2047D /* IAPStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPStore.swift; sourceTree = "<group>"; };
-		D3FA6BB72578330C00E2047D /* OwlProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlProducts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3FA6BAC2577FB3600E2047D /* StoreKit.framework in Frameworks */,
+				49EAE37A27E8996B00C761B4 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,11 +62,9 @@
 		D34650EE253786E500F701EA /* InsomniOwl */ = {
 			isa = PBXGroup;
 			children = (
+				D34650EF253786E500F701EA /* App.swift */,
 				D34651062538C8E700F701EA /* Views */,
 				D34650FF2537876C00F701EA /* Model */,
-				D34650EF253786E500F701EA /* InsomniOwlApp.swift */,
-				D34650F1253786E500F701EA /* ContentView.swift */,
-				D3298EB4257856DE005874E5 /* AppDelegate.swift */,
 				D34650F3253786E700F701EA /* Assets.xcassets */,
 				D34650F8253786E700F701EA /* Info.plist */,
 				D34650F5253786E700F701EA /* Preview Content */,
@@ -90,8 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				D34651002537878A00F701EA /* Owl.swift */,
-				D3FA6BB4257832F000E2047D /* IAPStore.swift */,
-				D3FA6BB72578330C00E2047D /* OwlProducts.swift */,
+				49EAE37B27E89D5C00C761B4 /* IAPStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +92,7 @@
 		D34651062538C8E700F701EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D34650F1253786E500F701EA /* ContentView.swift */,
 				D34651072538C91500F701EA /* OwlDLCView.swift */,
 			);
 			path = Views;
@@ -107,7 +101,7 @@
 		D3FA6BA82577F91700E2047D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D3FA6BAB2577FB3600E2047D /* StoreKit.framework */,
+				49EAE37927E8996B00C761B4 /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,12 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3FA6BB5257832F000E2047D /* IAPStore.swift in Sources */,
+				49EAE37C27E89D5C00C761B4 /* IAPStore.swift in Sources */,
 				D34650F2253786E500F701EA /* ContentView.swift in Sources */,
-				D34650F0253786E500F701EA /* InsomniOwlApp.swift in Sources */,
 				D34651012537878A00F701EA /* Owl.swift in Sources */,
-				D3298EB5257856DE005874E5 /* AppDelegate.swift in Sources */,
-				D3FA6BB82578330C00E2047D /* OwlProducts.swift in Sources */,
+				D34650F0253786E500F701EA /* App.swift in Sources */,
 				D34651082538C91500F701EA /* OwlDLCView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -304,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -321,15 +313,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"InsomniOwl/Preview Content\"";
-				DEVELOPMENT_TEAM = QDKA3FBC46;
+				DEVELOPMENT_TEAM = 4AQJ37X836;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = InsomniOwl/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.course.2020.iap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.course.2022.iap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -343,15 +335,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"InsomniOwl/Preview Content\"";
-				DEVELOPMENT_TEAM = QDKA3FBC46;
+				DEVELOPMENT_TEAM = 4AQJ37X836;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = InsomniOwl/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.course.2020.iap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.course.2022.iap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

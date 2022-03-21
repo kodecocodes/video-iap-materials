@@ -31,30 +31,40 @@
 /// THE SOFTWARE.
 
 import SwiftUI
-import StoreKit
 
 struct OwlDLCView: View {
+  init(owl: Owl) {
+    switch owl.isPurchased {
+    case true:
+      self.init(
+        text: owl.product.description,
+        imageName: .init(owl.id.split(separator: ".").last!)
+      )
+    case false:
+      self.init()
+    }
+  }
 
-  @EnvironmentObject var store: IAPStore
-  var product: SKProduct?
-  let defaultText = "No Cash, No Owl!"
-  let defaultImage = "CouchOwl"
+  private let text: String
+  private let imageName: String
 
   var body: some View {
     VStack {
-      Text(product != nil && store.isPurchased(product!.productIdentifier) ? product!.localizedTitle : defaultText)
-      Image(product != nil && store.isPurchased(product!.productIdentifier) ? imageFor(product: product!) : defaultImage)
+      Text(text)
+      Image(imageName)
         .resizable()
-        .aspectRatio(contentMode: .fit)
+        .scaledToFit()
         .padding()
     }
   }
 
-  private func imageFor(product: SKProduct) -> String {
-    let components = product.productIdentifier.components(separatedBy: ".")
-    return components[components.count - 1]
+  init(
+    text: String = "No Cash, No Owl!",
+    imageName: String = "CouchOwl"
+  ) {
+    self.text = text
+    self.imageName = imageName
   }
-
 }
 
 struct OwlDLCView_Previews: PreviewProvider {

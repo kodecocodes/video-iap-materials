@@ -33,15 +33,25 @@
 import SwiftUI
 
 struct OwlDLCView: View {
+  private let text: String
+  private let imageName: String
+
   var body: some View {
     VStack {
-      Text("No Cash, No Owl!")
-      Image("CouchOwl")
+      Text(text)
+      Image(imageName)
         .resizable()
-        .aspectRatio(contentMode: .fit)
+        .scaledToFit()
         .padding()
     }
+  }
 
+  init(
+    text: String = "No Cash, No Owl!",
+    imageName: String = "CouchOwl"
+  ) {
+    self.text = text
+    self.imageName = imageName
   }
 }
 
