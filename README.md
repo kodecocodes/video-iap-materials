@@ -1,6 +1,6 @@
 # In-App Purchases: Materials
 
-This repo contains all the downloadable materials and projects associated with the **[In-App Purchases]([https://www.raywenderlich.com/library](https://www.raywenderlich.com/30506103-in-app-purchases))** from [raywenderlich.com](https://www.raywenderlich.com).
+This repo contains all the downloadable materials and projects associated with the **[In-App Purchases](https://www.raywenderlich.com/30506103-in-app-purchases) course** from [raywenderlich.com](https://www.raywenderlich.com).
 
 ## Release History
 
